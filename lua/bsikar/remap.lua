@@ -12,7 +12,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- greatest remap ever
-vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("x", "<leader>p", [["_dP]]) -- have to learn
 
 -- next greatest remap ever : asbjornHaland (copy to clipboard)
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])

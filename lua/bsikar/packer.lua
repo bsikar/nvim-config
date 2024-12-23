@@ -10,12 +10,11 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
+    use('nvim-treesitter/nvim-treesitter-context')
+
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
     })
 
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -46,7 +45,7 @@ return require('packer').startup(function(use)
             { 'hrsh7th/cmp-nvim-lsp' },
             { 'hrsh7th/cmp-buffer' },
             { 'hrsh7th/cmp-path' },
-            { 'hrsh7th/cmp-cmdline'},
+            { 'hrsh7th/cmp-cmdline' },
             { 'L3MON4D3/LuaSnip' },
             { 'saadparwaiz1/cmp_luasnip' },
             { 'hrsh7th/cmp-nvim-lua' },
